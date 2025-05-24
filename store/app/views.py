@@ -221,14 +221,12 @@ class LogInView(View):
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
-
             user = authenticate(username=username, password=password)
-            pro = Verification.objects.get(user=user)
-            if pro.verify:
+      
+            if user is not None:
                 login(request, user)
                 return redirect('/profile/')
             else:
-                messages.info(request, 'Your account is\'t verified, Please Check Your Email Account.')
                 return redirect('/accounts/login/')
         else:
             return render(request, 'app/login.html',{'form':form})
@@ -244,12 +242,8 @@ class CustomerRegistrationView(View):
         form = CustomerRegistrationForm(request.POST)
         if form.is_valid():
             new_user = form.save()
-            uid = uuid.uuid4()
-            pro_obj = Verification(user=new_user, token=uid)
-            pro_obj.save()
-            send_email_after_registration(new_user.email, uid)
-            messages.success(request, "Your Account Created Successful, To Verifi your account Check your email.")
-            return render(request, 'app/customerregistration.html', {'form': form})
+            login(request, new_user)
+            return redirect('home')
         return render(request, 'app/customerregistration.html', {'form': form})
 
 def send_email_after_registration(email, token):

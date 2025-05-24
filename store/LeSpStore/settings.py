@@ -14,7 +14,18 @@ SECRET_KEY = 'django-insecure-2wx%%t+po5v&#9&q!lryn_y)f-)yqw9r4mz8yar%j(q=&2peig
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# settings.py
 
+DEBUG = True  # Set to False in production
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']  # Allow localhost
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://localhost:8000',  # Trust HTTPS origin
+    'http://localhost:8000',   # Trust HTTP origin (if needed)
+]
+
+# Keep the rest of your settings unchanged
 
 # Application definition
 
@@ -141,7 +152,7 @@ JAZZMIN_SETTINGS = {
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
         
-        "app.Verification": "fas fa-address-card",
+        #"app.Verification": "fas fa-address-card",
         "app.cart": "fas fa-shopping-cart",
         "app.OrderPlaced": "fas fa-shipping-fast",
         "app.brand": "fab fa-font-awesome-flag",
@@ -218,13 +229,13 @@ JAZZMIN_UI_TWEAKS = {
 
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+    #'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'LeSpStore.urls'
@@ -268,7 +279,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+       'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
@@ -307,10 +318,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "debramja101@gmail.com"
-EMAIL_HOST_PASSWORD = "bxvosgniabiszzsy"
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_USE_TLS = True
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = "ea002038@gmail.com"
+#EMAIL_HOST_PASSWORD = "pbgg vfut isfe rlhe"
 # EMAIL_HOST_USER = "lespstore02595@gmail.com"
 # EMAIL_HOST_PASSWORD = ""
