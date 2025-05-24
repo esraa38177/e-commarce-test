@@ -1,1 +1,42 @@
 store/web/lib/
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+
+# Django
+db.sqlite3
+/staticfiles/
+media/
+
+# Virtualenv
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+
+# Virtualenv
+venv/
+
+# Django
+db.sqlite3
+/static/
+/media/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
