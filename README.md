@@ -27,21 +27,21 @@ Follow the installation instructions below to set up the project.
 ### Prerequisites
 
 - Ensure you have WSL installed with a Linux distribution, such as Ubuntu.
-- Install Python 3.7 if not already installed:
+- Install Python 3.12 if not already installed:
 
 ```bash
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
-sudo apt install python3.7
+sudo apt install python3.12
 ```
 
 ### Set up Virtual Environment
 
 ```bash
 cd /path/to/your/project
-python3.7 -m venv venv
+python3.12 -m venv venv
 source venv/bin/activate
 ```
 
