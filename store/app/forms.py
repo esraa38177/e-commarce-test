@@ -9,7 +9,14 @@ from .models import Customer
 
 
 class CustomerRegistrationForm(UserCreationForm):
-    email = forms.CharField(required=False)
+        email = forms.CharField(required=False, widget=forms.EmailInput(
+        attrs={'class': 'form-control bg-dark text-light','placeholder':'Email *'}))
+    username = forms.CharField(widget=forms.TextInput(
+        attrs={'class': 'form-control bg-dark text-light','placeholder':'Username *'}))
+    password1 = forms.CharField(
+        label='Password', widget=forms.PasswordInput(attrs={'class': 'form-control bg-dark text-light','placeholder':'Password *'}))
+    password2 = forms.CharField(label='Confirm Password(again)',
+            widget=forms.PasswordInput(attrs={'class': 'form-control bg-dark text-light','placeholder':'Confirm Password *'}))
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
