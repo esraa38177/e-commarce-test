@@ -1,7 +1,7 @@
 ## 🔗 Links
 
 
-# E-Commarce-Stores
+# E-Commerce-Stores
 This is Online Electronic shopping store. Responsive Online Shopping Store Using Django, HTML, CSS, JavaScript, Bootstrap framework etc.
 
 # Projects Live Demo
