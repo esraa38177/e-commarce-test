@@ -9,7 +9,6 @@ This e-commerce website, developed by a team of computer science students from N
 - **Python 3.11**: Core programming language for backend development.
 - **Django**: Backend framework for building the web application.
 - **HTML, CSS, JavaScript**: Frontend technologies for user interface and interactivity.
-- *(Add other technologies, such as Bootstrap or jQuery, if used in your project.)*
 
 ## Getting Started
 
@@ -26,7 +25,6 @@ Follow the installation instructions below to set up the project.
 
 ### Prerequisites
 
-- Ensure you have WSL installed with a Linux distribution, such as Ubuntu.
 - Install Python 3.12 if not already installed:
 
 ```bash
