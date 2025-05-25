@@ -6,7 +6,7 @@ This e-commerce website, developed by a team of computer science students from N
 
 ## Technologies Used
 
-- **Python 3.7**: Core programming language for backend development.
+- **Python 3.11**: Core programming language for backend development.
 - **Django**: Backend framework for building the web application.
 - **HTML, CSS, JavaScript**: Frontend technologies for user interface and interactivity.
 - *(Add other technologies, such as Bootstrap or jQuery, if used in your project.)*
