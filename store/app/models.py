@@ -11,12 +11,12 @@ from django.core.validators import MaxLengthValidator, MinValueValidator
 
 STATE_CHOICE = (
     ('Province No. 1', 'Province No. 1'),
-    ('Madhesh Province', 'Madhesh Province'),
-    ('Bagmati Province', 'Bagmati Province'),
-    ('Gandaki Province', 'Gandaki Province'),
-    ('Lumbini Province', 'Lumbini Province'),
-    ('Karnali Province', 'Karnali Province'),
-    ('Sudurpashchim Province', 'Sudurpashchim Province'),
+    ('cairo', 'egypt'),
+    ('giza', 'egypt'),
+    ('tanta', 'egypt'),
+    ('alexandria', 'egypt'),
+    ('fayoum', 'egypt'),
+    ('alsaieed', 'egypt'),
 )
 
 

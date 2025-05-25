@@ -6,11 +6,11 @@ This e-commerce website, developed by a team of computer science students from N
 
 ## Technologies Used
 
-- **Python 3.11**: Core programming language for backend development.
-- **Django**: Backend framework for building the web application.
-- **HTML, CSS, JavaScript**: Frontend technologies for user interface and interactivity.
-
-## Getting Started
+Python 3.7: Core programming language for backend development.
+Django: Backend framework for building the web application.
+HTML, CSS, JavaScript: Frontend technologies for user interface and interactivity.
+(Add other technologies, such as Bootstrap or jQuery, if used in your project.)
+Getting Started
 
 Clone this repository and navigate to the project directory:
 
@@ -27,7 +27,8 @@ Follow the installation instructions below to set up the project.
 
 - Install Python 3.12 if not already installed:
 
-```bash
+Ensure you have WSL installed with a Linux distribution, such as Ubuntu.
+Install Python 3.7 if not already installed:
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa

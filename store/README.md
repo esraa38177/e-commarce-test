@@ -2,13 +2,13 @@
 
 
 # E-Commarce-Stores
-This is Online Electronic shopping store. Responsive Online Shopping Store Using Django, HTML, CSS, JavaScript, Bootstrap framework etc.
+This is Online Electronic shopping store. Responsive Online Shopping Store Using Django, HTML, CSS, JavaScript, framework etc.
 
 # Projects Live Demo
 https://lespstore.pythonanywhere.com/
 
 # Used in Projets
-`Django` `Python` `HTML` `CSS` `JavaScript` `Bootstrap` `Ajax` `Jquery`  `FontAwesome` `Owl Carosul`
+`Django` `Python` `HTML` `CSS` `JavaScript`
 
 # How does a virtual environment work?
 
