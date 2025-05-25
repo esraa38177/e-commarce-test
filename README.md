@@ -10,7 +10,6 @@ Technologies Used
 Python 3.7: Core programming language for backend development.
 Django: Backend framework for building the web application.
 HTML, CSS, JavaScript: Frontend technologies for user interface and interactivity.
-(Add other technologies, such as Bootstrap or jQuery, if used in your project.)
 Getting Started
 
 Clone this repository and navigate to the project directory:
@@ -23,7 +22,6 @@ Installation Instructions
 
 Prerequisites
 
-Ensure you have WSL installed with a Linux distribution, such as Ubuntu.
 Install Python 3.7 if not already installed:
 sudo apt update
 sudo apt install software-properties-common
@@ -62,8 +60,3 @@ Check Django version: django-admin --version
 List installed packages: pip freeze
 Generate migrations (if models change): python manage.py makemigrations
 Contributors
-
-Name	Student ID
-Esraa Ahmed	221000462
-Ganna Saad	221001828
-Radwa Emad	222000092
