@@ -9,7 +9,7 @@ from .models import Customer
 
 
 class CustomerRegistrationForm(UserCreationForm):
-        email = forms.CharField(required=False, widget=forms.EmailInput(
+    email = forms.CharField(required=False, widget=forms.EmailInput(
         attrs={'class': 'form-control bg-dark text-light','placeholder':'Email *'}))
     username = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'form-control bg-dark text-light','placeholder':'Username *'}))
