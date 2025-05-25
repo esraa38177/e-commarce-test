@@ -22,7 +22,6 @@ class ProductView(View):
     def get(self, request):
         totalitem = 0
         electronicsAssessories = Product.objects.filter(category='ElectronicAccessories')
-        # bottomweres = Product.objects.filter(category='BW')
         mobiles = Product.objects.filter(category='Mobile')
         laptops = Product.objects.filter(category='Laptop')
         if request.user.is_authenticated:
@@ -245,48 +244,6 @@ class CustomerRegistrationView(View):
             login(request, new_user)
             return redirect('home')
         return render(request, 'app/customerregistration.html', {'form': form})
-
-def send_email_after_registration(email, token):
-    subject = "Verify Email"
-    message = f"""
-    Dear Sir/Madam,
-
-    ATTN : Please do not reply to this email.This mailbox is not monitored and you will not receive a response.
-
-    Your Verification Email is Given bellow 👇
-    Click on the link to verify your account https://lespstore.pythonanywhere.com/account-verify/{token}
-
-    If you have any queries, Please contact us at,
-
-    LegendSpam Store,
-    kirtipur,Kathmandu, Nepal.
-    Phone # +9779862413503
-    Email Id: lespstore02595@gmail.com
-    Portfolio: amritgiri01.com.np
-
-    Warm Regards,
-    LegendSpam Store
-
-    """
-    print("\n\n")
-    print(message,"\n")
-    from_email = settings.EMAIL_HOST_USER
-    recipient_list = [email]
-    send_mail(subject=subject, message=message, from_email=from_email, recipient_list=recipient_list)
-
-def account_verify(request, token):
-	pf = Verification.objects.filter(token=token).first()
-	pf.verify = True
-	pf.save()
-	messages.success(request, "Your Account has been Verified, You can Login Now.")
-	return redirect('/accounts/login/')
-
-# class PasswordChangeView(View):
-#     def passwordchange(request):
-#         totalitem = 0
-#         if request.user.is_authenticated:
-#             totalitem = len(Cart.objects.filter(user=request.user))
-#         return render(request, 'app/passwordchange.html', {'totalitem': totalitem})
 
 @login_required
 def checkout(request):
